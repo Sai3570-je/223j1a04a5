@@ -11,9 +11,9 @@ This repository contains my submission for the **Affordmed Campus Hiring Evaluat
 
 223j1a04a5/
 ├── Logging Middleware/              # Contains the logging middleware implementation
-│   ├── logger.js                    # Core logging logic
-│   ├── package.json                 # Node.js package configuration
-│   └── README.md                    # Documentation and usage
+│   ├── logger.js                   # Core logging logic
+│   ├── package.json                # Node.js package configuration
+│   └── README.md                   # Documentation and usage
 ├── Frontend Test Submission/       # React-based URL Shortener Application
 │   └── url-shortener-app/
 │       ├── public/                 # Static assets
@@ -24,9 +24,6 @@ This repository contains my submission for the **Affordmed Campus Hiring Evaluat
 └── README.md                       # Main documentation (this file)
 
 
-markdown
-Copy
-Edit
 
 ---
 
