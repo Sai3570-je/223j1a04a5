@@ -1,120 +1,150 @@
-Affordmed Campus Hiring Evaluation – Frontend Submission
-Roll Number: 223j1a04a5
-This repository contains my submission for the Affordmed Campus Hiring Evaluation – Frontend Track. It includes:
+# Affordmed Campus Hiring Evaluation – Frontend Submission
 
-A URL Shortener React Web Application
+**Roll Number**: `223j1a04a5`
 
-A Standalone Logging Middleware
+This repository contains my submission for the **Affordmed Campus Hiring Evaluation – Frontend Track**. It includes:
 
-📁 Project Structure
-graphql
+- ✅ A **URL Shortener React Web Application**
+- ✅ A **Standalone Logging Middleware**
+
+---
+
+## 📁 Project Structure
+
+223j1a04a5/
+├── Logging Middleware/ # Contains the logging middleware implementation
+│ ├── logger.js
+│ ├── package.json
+│ └── README.md
+├── Frontend Test Submission/ # React-based URL Shortener App
+│ └── url-shortener-app/
+│ ├── public/
+│ ├── src/
+│ ├── vite.config.js
+│ ├── index.html
+│ ├── package.json
+│ └── README.md
+└── README.md # Main documentation (this file)
+
+markdown
 Copy
 Edit
-2223j1a04a5/
-├── Logging Middleware/          # Contains the logging middleware implementation
-│   ├── logger.js
-│   ├── package.json
-│   └── README.md
-├── Frontend Test Submission/    # React-based URL Shortener App
-│   └── url-shortener-app/
-│       ├── public/
-│       ├── src/
-│       ├── ... (other project files)
-│       └── README.md
-└── README.md                    # Main documentation (this file)
 
-1. 🧩 Logging Middleware
-Overview
-This is a standalone JavaScript logging module built to simulate sending logs to a backend API. It adheres to Affordmed’s specification, supporting various:
+---
 
-Stacks: e.g., frontend
+## 🔧 1. Logging Middleware
 
-Levels: info, error, debug, warn, fatal
+### 📌 Overview
 
-Packages: Supports types like controller, route, etc.
+This is a standalone **JavaScript logging module** built to simulate sending logs to a backend API. It adheres to Affordmed’s evaluation specifications and supports multiple:
 
-Files
-Logging Middleware/logger.js: Core logging logic
+- **Stacks** – e.g., `frontend`
+- **Levels** – `info`, `debug`, `warn`, `error`, `fatal`
+- **Packages** – e.g., `controller`, `route`, `service`, etc.
 
-Logging Middleware/README.md: Documentation and usage examples
+### 📂 Files
 
-Logging Middleware/package.json: Node package setup
+- `logger.js` – Core logging logic
+- `package.json` – Defines module info and dependencies
+- `README.md` – Documentation and usage
 
-Usage Example
-javascript
-Copy
-Edit
+### 🚀 Usage Example
+
+```javascript
 import log from '../Logging Middleware/logger.js';
 
 // Log an informational message
 log("frontend", "info", "User successfully logged in.");
 
-// Log an error
+// Log an error message
 log("frontend", "error", "Failed to fetch data from API.");
-For full usage instructions, refer to: Logging Middleware/README.md
+🔍 For more details, refer to Logging Middleware/README.md
 
-2. 🌐 URL Shortener React Web Application
-Overview
-A React + Material UI based user-friendly URL Shortener. It runs fully on the frontend using localStorage for persistence.
+🌐 2. URL Shortener React Web Application
+📌 Overview
+A user-friendly URL Shortener built entirely using React and Material UI. It allows shortening of URLs, tracking clicks, setting expiry durations, and viewing URL statistics. All data is stored locally using localStorage.
 
-✨ Features
-✅ Shorten URLs with optional custom shortcodes
+✅ Features
+🔗 URL Shortening – Convert long URLs into short links
 
-⏱️ Custom Validity Periods (expiry settings)
+🔠 Custom Shortcodes – Optional user-defined shortcodes with validation
 
-📈 Click Tracking (timestamp, location, etc.)
+⏳ Validity Periods – Set expiry time for each URL
 
-📊 Statistics Dashboard
+📈 Click Tracking – Tracks click timestamp, location, and referrer
 
-🔄 Client-side Routing (React Router)
+📊 Statistics Dashboard – View click count and details per URL
 
-🎨 Material UI Design – responsive and clean
+⚛️ Client-side Routing – Fast navigation using React Router
 
-🔒 Input Validation – client-side
+💅 Material UI Only – Fully styled using Material UI components
 
-🔧 Installation & Setup
+🧪 Client-side Validation – Robust input handling and user feedback
+
+📂 Directory
 bash
 Copy
 Edit
-# Step 1: Navigate to project directory
-cd "Frontend Test Submission/url-shortener-app"
-
-# Step 2: Install dependencies
+Frontend Test Submission/url-shortener-app/
+├── public/              # Static assets
+├── src/                 # Source code (components, pages, logic)
+├── index.html           # Main HTML entry point
+├── vite.config.js       # Vite configuration
+├── package.json         # Project dependencies
+└── README.md            # App-specific documentation
+⚙️ Installation & Running Instructions
+🖥️ Logging Middleware (Standalone Module)
+bash
+Copy
+Edit
+cd "Logging Middleware"
 npm install
+# Import and use `logger.js` in any JavaScript/React project
+🌐 Frontend App Setup
+bash
+Copy
+Edit
+cd "Frontend Test Submission/url-shortener-app"
+npm install               # Install all dependencies
+npm run dev               # Start development server
+Once the dev server starts, open your browser and go to:
 
-# Step 3: Run the development server
-npm start
-🌍 Access
-Open your browser and go to: http://localhost:3000
+👉 http://localhost:3000
 
-🚀 Usage Guide
-Shorten a URL:
-Enter the URL → Optional: custom shortcode + validity → Click “Shorten URL”.
+🧪 Usage Guide
+🔗 Shortening URLs
+Enter a long URL
 
-View Statistics:
-Navigate to the "Statistics" tab to view all shortened URLs with analytics.
+(Optional) Enter a custom shortcode and/or set a validity duration
 
-Redirect via Short URL:
-Visit: http://localhost:3000/{yourshortcode} to be redirected and log the click.
+Click Shorten URL
 
-✅ Technical Highlights
-Fully compliant with Material UI only requirement
+📊 Viewing Statistics
+Click the "Statistics" tab
 
-All click and URL data managed client-side (no backend)
+View all shortened URLs and analytics
 
-Built with scalability and responsiveness in mind
+Click on a row to expand detailed view
 
-Logging middleware integrates cleanly into the frontend
+🔁 URL Redirection
+Access any shortened URL directly:
 
-Clean code structure and professional UI/UX
+arduino
+Copy
+Edit
+http://localhost:3000/<shortcode>
+You’ll be redirected to the original URL and click will be recorded.
 
-📎 Conclusion
-This submission demonstrates:
+📝 Notes
+✅ Built using React, Material UI, Vite
 
-✅ Strong command over React + MUI
+✅ Fully client-side: No backend required
 
-✅ Client-side routing, validation, data handling
+✅ Adheres to Affordmed's requirement to use only Material UI components
 
-✅ Integration of custom logging middleware
+✅ Codebase follows clean folder structure and naming conventions
 
-✅ Compliance with Affordmed’s frontend track guidelines
+✅ No personal or company names hardcoded in the codebase
+
+🧠 Conclusion
+This submission demonstrates a complete and compliant solution to the frontend challenge. The logging middleware showcases integration capabilities and adherence to specifications, while the React application demonstrates strong grasp of UI/UX principles, data handling, and frontend architecture.
