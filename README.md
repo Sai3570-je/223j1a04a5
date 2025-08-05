@@ -10,7 +10,7 @@ A Standalone Logging Middleware
 graphql
 Copy
 Edit
-223j1a04a5/
+2223j1a04a5/
 ├── Logging Middleware/          # Contains the logging middleware implementation
 │   ├── logger.js
 │   ├── package.json
@@ -22,6 +22,7 @@ Edit
 │       ├── ... (other project files)
 │       └── README.md
 └── README.md                    # Main documentation (this file)
+
 1. 🧩 Logging Middleware
 Overview
 This is a standalone JavaScript logging module built to simulate sending logs to a backend API. It adheres to Affordmed’s specification, supporting various:
