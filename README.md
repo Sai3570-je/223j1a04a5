@@ -9,22 +9,20 @@ This repository contains my submission for the **Affordmed Campus Hiring Evaluat
 
 ---
 
-## 📁 Project Structure
-
 223j1a04a5/
-├── Logging Middleware/ # Contains the logging middleware implementation
-│ ├── logger.js
-│ ├── package.json
-│ └── README.md
-├── Frontend Test Submission/ # React-based URL Shortener App
-│ └── url-shortener-app/
-│ ├── public/
-│ ├── src/
-│ ├── vite.config.js
-│ ├── index.html
-│ ├── package.json
-│ └── README.md
-└── README.md # Main documentation (this file)
+├── Logging Middleware/              # Contains the logging middleware implementation
+│   ├── logger.js                    # Core logging logic
+│   ├── package.json                 # Node.js package configuration
+│   └── README.md                    # Documentation and usage
+├── Frontend Test Submission/       # React-based URL Shortener Application
+│   └── url-shortener-app/
+│       ├── public/                 # Static assets
+│       ├── src/                    # React source code
+│       ├── package.json            # Project dependencies
+│       ├── vite.config.js          # Vite config file
+│       └── README.md               # Frontend README
+└── README.md                       # Main documentation (this file)
+
 
 markdown
 Copy
