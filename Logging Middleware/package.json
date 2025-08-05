@@ -1,0 +1,20 @@
+{
+  "name": "logging-middleware",
+  "version": "1.0.0",
+  "description": "Logging middleware for Affordmed Campus Hiring Evaluation",
+  "main": "logger.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "logging",
+    "middleware",
+    "evaluation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
+
